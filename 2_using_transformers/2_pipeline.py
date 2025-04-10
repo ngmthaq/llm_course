@@ -8,9 +8,11 @@ from transformers import pipeline
 classifier = pipeline("sentiment-analysis")
 
 # Run inference on a list of sequences
-classifier(
+output = classifier(
     [
         "I've been waiting for a HuggingFace course my whole life.",
         "I hate this so much!",
     ]
 )
+
+print(output)
