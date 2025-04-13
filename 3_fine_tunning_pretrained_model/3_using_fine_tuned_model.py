@@ -1,4 +1,3 @@
-import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
 
 model_path = "3_fine_tunning_pretrained_model/_test_trainer"
