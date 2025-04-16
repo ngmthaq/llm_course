@@ -140,7 +140,7 @@ def compute_metrics(eval_preds):
 
 ```python
 args = Seq2SeqTrainingArguments(
-    output_dir="6_nlp_classical_tasks/_3_translation_trainer",
+    output_dir="__models/distilbert-base-uncased-fine-tuned",
     eval_strategy="epoch",
     save_strategy="epoch",
     logging_strategy="epoch",
@@ -174,7 +174,7 @@ trainer = Trainer(
 
 trainer.train()
 
-trainer.save_model("6_nlp_classical_tasks/_3_translation_trainer")
+trainer.save_model("__models/distilbert-base-uncased-fine-tuned")
 ```
 
 - Assembles all components into the Trainer:

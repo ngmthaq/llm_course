@@ -45,7 +45,7 @@ data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
 
 # Training arguments
 training_args = TrainingArguments(
-    output_dir="3_fine_tunning_pretrained_model/_test_trainer",
+    output_dir="__models/bert-base-uncased-fine-tuned",
     eval_strategy="epoch",
     save_strategy="epoch",
     logging_strategy="epoch",
@@ -75,4 +75,4 @@ trainer = Trainer(
 trainer.train()
 
 # Save the model
-trainer.save_model("3_fine_tunning_pretrained_model/_test_trainer")
+trainer.save_model("__models/bert-base-uncased-fine-tuned")

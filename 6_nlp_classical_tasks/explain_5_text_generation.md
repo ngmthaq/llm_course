@@ -100,7 +100,7 @@ data_collator = DataCollatorForLanguageModeling(tokenizer, mlm=False)
 
 ```python
 args = TrainingArguments(
-    output_dir="6_nlp_classical_tasks/_5_text_generation",
+    output_dir="__models/gpt2-fine-tuned",
     per_device_train_batch_size=32,
     per_device_eval_batch_size=32,
     gradient_accumulation_steps=8,  # Effectively creates batch size of 256
@@ -135,7 +135,7 @@ trainer = Trainer(
 )
 
 trainer.train()
-trainer.save_model("6_nlp_classical_tasks/_5_text_generation")
+trainer.save_model("__models/gpt2-fine-tuned")
 ```
 
 - Leverages Hugging Face Trainer API for streamlined training process

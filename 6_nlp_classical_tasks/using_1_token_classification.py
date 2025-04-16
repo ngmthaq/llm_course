@@ -3,7 +3,7 @@ from transformers import pipeline
 # Using Model
 token_classifier = pipeline(
     "token-classification",
-    model="6_nlp_classical_tasks/_1_token_classification_trainer",
+    model="__models/bert-base-cased-fine-tuned",
     aggregation_strategy="simple",
 )
 

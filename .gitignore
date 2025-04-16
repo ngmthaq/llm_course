@@ -32,6 +32,8 @@ venv/
 *.safetensors
 *.txt
 *.0
+__models/**/*
+!__models/.gitkeep
 
 # Logs and debugging
 logs/

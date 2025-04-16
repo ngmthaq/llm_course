@@ -2,7 +2,7 @@ from transformers import pipeline
 
 mask_filler = pipeline(
     task="fill-mask",
-    model="6_nlp_classical_tasks/_2_masked_language_trainer",
+    model="__models/distilbert-base-uncased-fine-tuned",
 )
 
 text = "This is a great [MASK]."

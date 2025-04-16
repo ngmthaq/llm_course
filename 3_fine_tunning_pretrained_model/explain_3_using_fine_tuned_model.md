@@ -9,7 +9,7 @@ The code demonstrates how to load and use a fine-tuned model to determine if two
 ```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
 
-model_path = "3_fine_tunning_pretrained_model/_test_trainer"
+model_path = "__models/bert-base-uncased-fine-tuned"
 sentence1 = "The weather is nice today."
 sentence2 = "It's a beautiful day outside."
 

@@ -50,7 +50,7 @@ down_sampled_lm_dataset = lm_dataset["train"].train_test_split(
 )
 
 training_args = TrainingArguments(
-    output_dir="6_nlp_classical_tasks/_2_masked_language_trainer",
+    output_dir="__models/distilbert-base-uncased-fine-tuned",
     eval_strategy="epoch",
     save_strategy="epoch",
     logging_strategy="epoch",
@@ -72,4 +72,4 @@ trainer = Trainer(
 
 trainer.train()
 
-trainer.save_model("6_nlp_classical_tasks/_2_masked_language_trainer")
+trainer.save_model("__models/distilbert-base-uncased-fine-tuned")

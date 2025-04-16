@@ -257,7 +257,7 @@ The AutoModelForTokenClassification class adds a token classification head (a li
 ```python
 # Training arguments
 args = TrainingArguments(
-    output_dir="6_nlp_classical_tasks/_1_token_classification_trainer",
+    output_dir="__models/bert-base-cased-fine-tuned",
     eval_strategy="epoch",
     save_strategy="epoch",
     logging_strategy="epoch",
@@ -281,7 +281,7 @@ trainer = Trainer(
 trainer.train()
 
 # Save the model
-trainer.save_model("6_nlp_classical_tasks/_1_token_classification_trainer")
+trainer.save_model("__models/bert-base-cased-fine-tuned")
 ```
 
 The training configuration:
