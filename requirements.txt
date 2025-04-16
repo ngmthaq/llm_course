@@ -1,7 +1,7 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: osx-arm64
-# created-by: conda 24.11.3
+# created-by: conda 24.9.2
 absl-py=2.2.2=pypi_0
 accelerate=1.6.0=pypi_0
 aenum=3.1.15=pypi_0
@@ -99,7 +99,7 @@ decorator=5.1.1=pyhd3eb1b0_0
 defusedxml=0.7.1=pyhd3eb1b0_0
 deprecated=1.2.13=py310hca03da5_0
 diff-match-patch=20200713=pyhd3eb1b0_0
-diffusers=0.33.0.dev0=pypi_0
+diffusers=0.33.0=pypi_0
 dill=0.3.8=py310hca03da5_0
 distributed=2024.12.1=py310hca03da5_0
 distro=1.9.0=pypi_0
