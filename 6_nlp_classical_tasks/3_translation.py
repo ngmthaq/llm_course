@@ -7,40 +7,59 @@ from transformers import Trainer
 import numpy as np
 import evaluate
 
-raw_datasets = load_dataset(path="kde4", trust_remote_code=True, lang1="en", lang2="fr")
+# Define constants
+checkpoint = "Helsinki-NLP/opus-mt-en-fr"
+output_dir = "__models/opus-mt-en-fr-fine-tuned"
+dataset_name = "kde4"
+dataset_config_name = "en-fr"
 
+# Load dataset
+raw_datasets = load_dataset(
+    path=dataset_name,
+    trust_remote_code=True,
+    lang1="en",
+    lang2="fr",
+)
+
+# Downsample the dataset
 split_datasets = raw_datasets["train"].train_test_split(
     train_size=0.2,  # increase train size to higher accuracy
     test_size=0.1,  # increase test size to higher accuracy
     seed=42,
 )
 
+# Rename the test set to validation
 split_datasets["validation"] = split_datasets.pop("test")
 
-model_checkpoint = "Helsinki-NLP/opus-mt-en-fr"
+# Load the tokenizer
+tokenizer = AutoTokenizer.from_pretrained(checkpoint, return_tensors="pt")
 
-tokenizer = AutoTokenizer.from_pretrained(model_checkpoint, return_tensors="pt")
 
-
+# Tokenize function
 def preprocess_function(examples):
     inputs = [example["en"] for example in examples["translation"]]
     targets = [example["fr"] for example in examples["translation"]]
     return tokenizer(inputs, text_target=targets, max_length=128, truncation=True)
 
 
+# Tokenize the dataset
 tokenizer_datasets = split_datasets.map(
     preprocess_function,
     batched=True,
     remove_columns=split_datasets["train"].column_names,
 )
 
-model = AutoModelForSeq2SeqLM.from_pretrained(model_checkpoint)
+# Load the model
+model = AutoModelForSeq2SeqLM.from_pretrained(checkpoint)
 
+# Data collator
 data_collator = DataCollatorForSeq2Seq(model=model, tokenizer=tokenizer)
 
+# Load the metric
 metric = evaluate.load("sacrebleu")
 
 
+# Compute metrics function
 def compute_metrics(eval_preds):
     preds, labels = eval_preds
     preds = preds[0] if isinstance(preds, tuple) else preds
@@ -53,6 +72,7 @@ def compute_metrics(eval_preds):
     return {"bleu": result["score"]}
 
 
+# Training arguments
 args = Seq2SeqTrainingArguments(
     output_dir="__models/distilbert-base-uncased-fine-tuned",
     eval_strategy="epoch",
@@ -70,6 +90,7 @@ args = Seq2SeqTrainingArguments(
     dataloader_num_workers=0,
 )
 
+# Trainer
 trainer = Trainer(
     model=model,
     args=args,
@@ -80,6 +101,8 @@ trainer = Trainer(
     compute_metrics=compute_metrics,
 )
 
+# Start training
 trainer.train()
 
+# Save the model
 trainer.save_model("__models/distilbert-base-uncased-fine-tuned")

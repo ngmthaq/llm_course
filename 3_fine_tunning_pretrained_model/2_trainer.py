@@ -15,8 +15,9 @@ from transformers import (
     Trainer,
 )
 
-# Define the model checkpoint
+# Define the model checkpoint, model output directory
 checkpoint = "bert-base-uncased"
+output_dir = "__models/bert-base-uncased-fine-tuned"
 
 # Load the MRPC dataset
 dataset_name = "mrpc"
@@ -45,7 +46,7 @@ data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
 
 # Training arguments
 training_args = TrainingArguments(
-    output_dir="__models/bert-base-uncased-fine-tuned",
+    output_dir=output_dir,
     eval_strategy="epoch",
     save_strategy="epoch",
     logging_strategy="epoch",
@@ -75,4 +76,4 @@ trainer = Trainer(
 trainer.train()
 
 # Save the model
-trainer.save_model("__models/bert-base-uncased-fine-tuned")
+trainer.save_model(output_dir)

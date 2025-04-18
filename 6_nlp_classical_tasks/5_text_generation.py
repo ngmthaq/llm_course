@@ -9,11 +9,19 @@ from transformers import (
     TrainingArguments,
 )
 
+# Define constants
+model_checkpoint = "gpt2"
+tokenizer_checkpoint = "huggingface-course/code-search-net-tokenizer"
+train_dataset_name = "huggingface-course/codeparrot-ds-train"
+val_dataset_name = "huggingface-course/codeparrot-ds-valid"
+output_dir = "__models/gpt2-fine-tuned"
 context_length = 128
 
-ds_train = load_dataset("huggingface-course/codeparrot-ds-train", split="train")
-ds_valid = load_dataset("huggingface-course/codeparrot-ds-valid", split="validation")
+# Load the dataset
+ds_train = load_dataset(train_dataset_name, split="train")
+ds_valid = load_dataset(val_dataset_name, split="validation")
 
+# Load full dataset
 raw_datasets = DatasetDict(
     {
         "train": ds_train,  # .shuffle().select(range(50000)),
@@ -21,11 +29,12 @@ raw_datasets = DatasetDict(
     }
 )
 
-tokenizer = AutoTokenizer.from_pretrained(
-    "huggingface-course/code-search-net-tokenizer"
-)
+# Load the tokenizer
+tokenizer = AutoTokenizer.from_pretrained(tokenizer_checkpoint)
+tokenizer.pad_token = tokenizer.eos_token
 
 
+# Tokenizer function
 def tokenize_function(examples):
     outputs = tokenizer(
         examples["content"],
@@ -41,26 +50,29 @@ def tokenize_function(examples):
     return {"input_ids": input_batch}
 
 
+# Tokenize the dataset
 tokenized_datasets = raw_datasets.map(
     tokenize_function, batched=True, remove_columns=raw_datasets["train"].column_names
 )
 
+# Configure the model
 config = AutoConfig.from_pretrained(
-    "gpt2",
+    model_checkpoint,
     vocab_size=len(tokenizer),
     n_ctx=context_length,
     bos_token_id=tokenizer.bos_token_id,
     eos_token_id=tokenizer.eos_token_id,
 )
 
+# Load the model from config
 model = GPT2LMHeadModel(config)
 
-tokenizer.pad_token = tokenizer.eos_token
-
+# Data collator
 data_collator = DataCollatorForLanguageModeling(tokenizer, mlm=False)
 
+# Training arguments
 args = TrainingArguments(
-    output_dir="__models/gpt2-fine-tuned",
+    output_dir=output_dir,
     per_device_train_batch_size=32,
     per_device_eval_batch_size=32,
     gradient_accumulation_steps=8,
@@ -77,6 +89,7 @@ args = TrainingArguments(
     learning_rate=5e-4,
 )
 
+# Trainer
 trainer = Trainer(
     model=model,
     processing_class=tokenizer,
@@ -86,6 +99,8 @@ trainer = Trainer(
     eval_dataset=tokenized_datasets["valid"],
 )
 
+# Train the model
 trainer.train()
 
-trainer.save_model("__models/gpt2-fine-tuned")
+# Save the model
+trainer.save_model(output_dir)

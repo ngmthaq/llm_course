@@ -11,6 +11,10 @@ from transformers import TrainingArguments
 from transformers import Trainer
 from transformers import pipeline
 
+# Define constants
+checkpoint = "bert-base-cased"
+output_dir = "__models/bert-base-cased-fine-tuned"
+
 # Load the CoNLL2003 dataset
 raw_datasets = load_dataset("conll2003", trust_remote_code=True)
 print(raw_datasets)
@@ -44,7 +48,7 @@ print(line1)
 print(line2)
 
 # Tokenizer
-tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
+tokenizer = AutoTokenizer.from_pretrained(checkpoint)
 print(tokenizer.is_fast)
 
 
@@ -99,6 +103,7 @@ data_collator = DataCollatorForTokenClassification(tokenizer=tokenizer)
 metric = evaluate.load("seqeval")
 
 
+# Compute metrics function
 def compute_metrics(eval_preds):
     logits, labels = eval_preds
     predictions = np.argmax(logits, axis=-1)
@@ -125,14 +130,14 @@ label2id = {label: index for index, label in id2label.items()}
 
 # Model
 model = AutoModelForTokenClassification.from_pretrained(
-    "bert-base-cased",
+    checkpoint,
     id2label=id2label,
     label2id=label2id,
 )
 
 # Training arguments
 args = TrainingArguments(
-    output_dir="__models/bert-base-cased-fine-tuned",
+    output_dir=output_dir,
     eval_strategy="epoch",
     save_strategy="epoch",
     logging_strategy="epoch",
@@ -156,4 +161,4 @@ trainer = Trainer(
 trainer.train()
 
 # Save the model
-trainer.save_model("__models/bert-base-cased-fine-tuned")
+trainer.save_model(output_dir)
