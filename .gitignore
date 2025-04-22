@@ -30,8 +30,6 @@ venv/
 *.ckpt
 *.bin
 *.safetensors
-*.txt
-*.0
 __models/**/*
 !__models/.gitkeep
 
