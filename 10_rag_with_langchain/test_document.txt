@@ -1,23 +1,97 @@
-MEOWCART ECOMMERCE - TUYỂN FREELANCER SHOPIFY DEVELOPER LƯƠNG CỐ ĐỊNH $500 - 800$ HỢP ĐỒNG 3/6/9/12 tháng.
-Bên mình đang tìm kiếm Freelancer Shopify Developer để tham gia phát triển các dự án eCommerce chất lượng cao. Nếu bạn có kinh nghiệm về Shopify Liquid, tùy chỉnh theme và tối ưu hóa hiệu suất store, đây là cơ hội tốt để hợp tác lâu dài.
-Mô tả công việc
-Phát triển, tùy chỉnh theme Shopify bằng Liquid theo yêu cầu dự án.
-Chuyển thiết kế từ Figma/PSD thành theme Shopify hoặc chỉnh sửa theme có sẵn.
-Tối ưu hiệu suất, UI/UX, tốc độ load và SEO cho Shopify store.
-Quản lý và xử lý dữ liệu trên Shopify: Product, Collection, Cart, Checkout...
-Kết nối Shopify API, Webhooks khi cần thiết.
-Khắc phục lỗi, cải thiện hiệu suất và bảo mật hệ thống.
-Yêu cầu bắt buộc
-Thành thạo Shopify Liquid và theme customization.
-Hiểu biết cơ bản về Shopify API, Webhooks.
-Có kinh nghiệm tối ưu Shopify store về UI/UX, SEO, tốc độ tải trang.
-Biết sử dụng Firebase, NextJS, TailwindCSS là một lợi thế nhưng không bắt buộc.
-Chủ động, có trách nhiệm và khả năng làm việc nhóm tốt.
-Quyền lợi
-Lương cố định từ $500 - $800/tháng, tùy kinh nghiệm.
-Hợp đồng linh hoạt theo dự án 3/6/9/12 tháng.
-Cơ hội làm việc với các dự án thực tế
-Môi trường làm việc chuyên nghiệp, thoải mái.
-Bonus theo hiệu suất và chất lượng công việc.
-ỨNG TUYỂN NGAY!
-Gửi CV về hieupham@meowcart.net hoặc inbox để trao đổi chi tiết.
+Interview Question
+
+1. Introduce
+- My name is Thang, you can call me Victor for English name, I graduated in Vietnam Commercial University with the major is Management Information system.
+- I have six years of experience working as a software engineer. I have knowledge in HTML, CSS, SCSS, jQuery, JavaScript, TypeScript, and a little bit of PHP.
+- For frontend side I have experienced in Reactjs and Vuejs also.
+- For the backend side, I can work with Node.js, Express and Nest.js.
+- For the near future, I want to become a technical leader in both frontend and backend side, and I also want to research and work with AI in the future
+
+2. Favorite / Recent Project
+- I have experience in a lot of domains like e-commerce, CMS, Chat Application, Map Application, specially is AI Application. I will tell you about my recent project named CIVAMS, it means CMC Intelligent Video Analytics and Management System.
+- This is an application combines with our CMC Computer Vision AI Model to supporting the office admin, the building admin, or the parking supervisor.
+- This application focus on employee timekeeping, surveillance, monitoring the user activities in the building, in the hospital, in the school, or in the car parking lot.
+- It has some main features like: authentication, dashboards, user management, system configuration, user detection, and monitoring user activities like falling, punching, kicking.
+- I take the frontend team leader position in this project, my tasks in this project are built the codebase from scratch with micro-frontend architect, break tasks for my team members, review code and find the best solution if they got any issues, and I also join with my team to build some of main features in “Authentication”, “System Configuration”, “User Detection” module.
+- The tech stacks of this project is React.js and Nest.js, it also use Material UI, Styled Components, Axios for frontend development, and Prisma, GraphQL, ffmpeg, socket for backend.
+
+3. JavaScript data types:
+- Primitive: String, Number, Boolean, Undefined
+- Non-Primitive: Array, Object, Function
+
+4. Hoisting
+- Hoisting is the default behavior of JS, it always move the declaration of variables and function to the top of code, it can be make the developer confused, to avoid this behavior, you can use strict mode or using let and const to define the variables instead of var
+
+5. Equal “==“ and “===“
+- This syntax is use for comparison between two variables, the different is the 2 equal comparison is cast the variables to the same data type and then it compares the value, the 3 equal comparison is not, it compares both the value and data type.
+- “2” == 2 true
+- “2” === 2 false
+- The performance of “===“ is much better than “==“ because it no need to cast the value to be same datatype.
+
+6. Var, let, const
+- They are the keyword to define the variables in JS.
+- Var was used in the beginning of JS, var does not have block scope, it has the hosting behavior, you can define the variable with var and leave value empty, at this time the value is undefined, it can be override the value, and you also can re-define the variables with var and it not throw any error. If you use var and you don’t manage your state carefully, it can be change the logic and make the debug step very confused
+- The next one is let, let was introduce many years after var, it can fix a lot of var issues, let has block scope, the variables defined with let can be override, but it cannot be re-define, let does not have the hoisting behavior so when you use the variable before define with let, it will throw the error
+- The last one is const, const has block scope, it doest not have hoisting behavior, but the difference between const and let is when you define the variable with const, you must give it a value, and this value cannot be updated
+
+7. Scope
+- JS has global scope, function scope and block scope
+- The variables define outside function have global scope and it can be access anywhere
+- The variables define inside function with let and const keyword have function scope, that you can use these variables inside of this function but except var, when you using var inside function, it can be used outside of this function
+- Block scope is similar to function scope, it is the code inside the brace brackets symbol like for loop, or if else, or try catch, …
+- Scope chain is that when you have a children scope inside a parent scope, the variables from parent can be accessed in child scope
+
+8. IIFE
+- It is one kind of JS function that will run as soon as possible when it defined
+- I usually use this function when I want to create an async context to use await in a non-async context
+
+9. HOF
+- Higher Order Component is a technique of JS, it has two kinds of function
+- The first one is the function that take another function as argument
+- The last one is the function that return a function as a return value
+- The examples of HOF that I use a lot can be talk about the array helper functions like: map, reduce, filter, find, …
+
+10. This keyword
+- The “this” keyword refer to an object, the value of “this” depends on the object which invoke the function
+- For the function called in global scope, “this” keyword  will take the global object, in frontend development, this is window object
+- In arrow function, there is no binding of “this” keyword
+
+11. Call, apply, bind
+- Call is a method in javascript, call will invoke a function with other context object, like you can give the context object to a global function or you can change the original object context to another object context
+- Apply is same with call but the syntax is different a little bit that call method accept separating arguments, apply method accept arguments as an array
+- Bind have the syntax like call but instead of invoke function, it returns a new function so that you can call it later depend on your logic
+
+12. Closures
+- Closures is a behavior of JS function to help remember the variables from outer scope
+- Example, you have a higher order function, inside this function you have a variable, then you return an another function as return value, in the return function you can still access the variable from the parent function
+
+13. Prototypes
+- Prototype is a fundamental concept of JS to implement inheritance in JS. All the objects have a property call prototype.
+- You can add a custom property or method inside original object via prototype, it helps JS object can inherit an another object like OOP
+- Prototype chain is that if you access the property or method in original object, if JS can not found anything inside object, it will look up to the prototype until find it or reach the last prototype.
+
+14. Destructuring
+- Destructuring is a new modern way to get the value from an object or array
+- In object, you can use a key to get the attributes value
+- In array, you can use index to get the index value
+
+15. Spread and rest
+- Spread is a modern technique in JS, it help you pass many arguments into your function from an array or it can copy all of the elements from array of objects to another array or object, it called shalow copy
+- Rest is also a modern technique in JS, it usually go with destructuring, when you pick some of elements from an array or object, and then you can use rest operator to assign all the rest elements inside a variable
+
+16. Promise
+- Promise is a JS technique to handle asynchronous operations, it was born to avoid using callback that can lead to callback hell
+- Promise has 3 state, pending, fulfilled and rejected, pending is that the operation in in flight and not to be done, the fulfilled is that the operation was done and rejected mean the operation got error
+- If you want to get the success value from fulfilled state, you can use then() function to handling it, and you can use catch() function to handling the error
+- If you want to handle some logic and you don’t care it success or error, you can use the finally() method
+- If you have many promises are invoking together, you can use Promise.all to listening the state of all these promises, it will fulfilled if all of the promise run successfully, if any promise was got error, promise.all will stop and get rejected
+- If you want to known which promise resolve and which one got rejected you can be use promise.settleAll
+
+17. Async / await
+- Async await is new technique of JS to handle the asynchronous operations with more convenience than using promise
+- In order to using it, you should mark the function with async keyword, then if you want to wait the operation to be done, just use await keyword before the operation
+- An asynchronous function always return a promise, and if you want to catch error inside async function, you can use try catch and finally
+
+18. Event loop
+- JS is single thread, so event loop is a concept of JS to manage how to execute multiple tasks
+- In event loop, it has three main components, callstack, webAPIs and callback queue, when JS run into an operation, it will push the operation and all of the logic into callstack then execute it and then remove it from callstack, but if this statement contains callback like setTimeout it will put it into WebAPI first, after WebAPI done the process it do not push directly the operation to the callstack, instead of this, WebAPI push it into callback queue, after the callstack is empty, event loop will send the callback from callback queue to callstack and then execute it
