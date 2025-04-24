@@ -34,13 +34,13 @@ retriever = vector_store.as_retriever()
 
 # Create PromptTemplate
 prompt = ChatPromptTemplate.from_template(
-    "\n\n".join(
+    "\n".join(
         [
-            "You are a helpful assistant. You will be given a context and a question.",
+            "You are a helpful assistant.",
             "Please answer the question based on the context.",
-            "Context: {context}",
-            "Question: {question}",
-            "Answer: ",
+            "CONTEXT: {context}",
+            "QUESTION: {question}",
+            "ANSWER: ",
         ]
     )
 )
@@ -49,9 +49,12 @@ prompt = ChatPromptTemplate.from_template(
 llm = HuggingFacePipeline.from_model_id(
     model_id="google/gemma-3-1b-it",
     task="text-generation",
-    model_kwargs={},
     pipeline_kwargs={
-        "max_new_tokens": 8192,
+        "max_new_tokens": 256,
+        "do_sample": False,
+        "top_p": None,
+        "top_k": None,
+        "temperature": None,
     },
 )
 
@@ -62,6 +65,7 @@ chain = (
     | StrOutputParser()
 )
 
-result = chain.invoke("What is hoisting?")
-
+result = chain.invoke("What is Higher Order Component?")
+result = result.split("ANSWER:")[-1]
+result = result.strip()
 print(result)
