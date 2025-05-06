@@ -35,11 +35,11 @@ retriever = vector_store.as_retriever()
 
 # Create prompt for multi query
 mq_prompt = ChatPromptTemplate.from_template(
-    "\n".join(
+    " ".join(
         [
             "You are an AI language model assistant.",
             "Your task is to generate exactly 3 different, each on a separate line, but related search queries that will help retrieve relevant documents from a vector database.",
-            "USER QUESTION: {question}",
+            "USER QUESTION: {question}.",
             "DIFFERENT QUESTIONS:",
         ]
     )
@@ -54,7 +54,7 @@ mq_llm = HuggingFacePipeline.from_model_id(
         "do_sample": False,
         "top_p": None,
         "top_k": None,
-        "temperature": None,
+        "temperature": 0,
     },
 )
 

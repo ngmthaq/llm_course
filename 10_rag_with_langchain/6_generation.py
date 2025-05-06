@@ -34,12 +34,12 @@ retriever = vector_store.as_retriever()
 
 # Create PromptTemplate
 prompt = ChatPromptTemplate.from_template(
-    "\n".join(
+    " ".join(
         [
             "You are a helpful assistant.",
             "Please answer the question based on the context.",
-            "CONTEXT: {context}",
-            "QUESTION: {question}",
+            "CONTEXT: {context}.",
+            "QUESTION: {question}.",
             "ANSWER: ",
         ]
     )

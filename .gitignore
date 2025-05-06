@@ -54,3 +54,4 @@ Thumbs.db
 
 # Whitelisting
 !requirements.txt
+!environment.yml
