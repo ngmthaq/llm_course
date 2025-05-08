@@ -1,78 +1,60 @@
-
-CURRICULUM VITAE
+CURRICULUM VITAE:
             				   	
-PERSONAL DETAILS
+PERSONAL DETAILS:
+- Name: Thang Nguyen
+- Nationality: Vietnam
+- Gender: Male
 
-●	Name		Thang Nguyen
-●	Nationality 	Vietnam
-●	Gender		Male
+OBJECTIVE:
+- Improve skills to evaluate risks, resolve problems and provide solutions in web development.
+- Improve logical thinking ability.
+- Complete the requirement with minimal time without quality compromising.
+- Able to work both in team and independently, willing to support people.
 
-OBJECTIVE
-
-•	Improve skills to evaluate risks, resolve problems and provide solutions in web development.
-•	Improve logical thinking ability.
-•	Complete the requirement with minimal time without quality compromising.
-•	Able to work both in team and independently, willing to support people.
-
-PROFESSIONAL SUMMARY	
-●	6+ years of experience in Software Development. Having knowledge of HTML, CSS, SCSS, JavaScript, jQuery, TypeScript, Node.js, PHP.
-●	Familiar with FE frameworks such as React.js, Vue.js, Electron.js. Experience in building reusable hooks & components with high performance across various browsers.
-●	Familiar with BE frameworks such as Express.js, Nest.js, Laravel.
-●	Familiar with UI building support libraries. E.g: Bootstrap, MUI, TailwindCSS, Vuetify
-●	Familiar with design tools (e.g: Figma, XD, Zeplin, Visily) and have knowledge of UX Design.
-●	Familiar with Micro-FE, PWA, REST, Git, Webpack, Vite, Firebase, Docker.	
+PROFESSIONAL SUMMARY:
+- 6+ years of experience in Software Development. Having knowledge of HTML, CSS, SCSS, JavaScript, jQuery, TypeScript, Node.js, PHP.
+- Familiar with FE frameworks such as React.js, Vue.js, Electron.js. Experience in building reusable hooks & components with high performance across various browsers.
+- Familiar with BE frameworks such as Express.js, Nest.js, Laravel.
+- Familiar with UI building support libraries. E.g: Bootstrap, MUI, TailwindCSS, Vuetify
+- Familiar with design tools (e.g: Figma, XD, Zeplin, Visily) and have knowledge of UX Design.
+- Familiar with Micro-FE, PWA, REST, Git, Webpack, Vite, Firebase, Docker.	
 	
-EDUCATION & CERTIFICATIONS	
-
-08/2016 – 06/2020	Vietnam Commercial University
-Management Information System
-08/2019 – 08/2020	ITPlus Institute of Information and Communication Technology
-Design and Develop Professional Website
+EDUCATION & CERTIFICATIONS:
+08/2016 – 06/2020: Vietnam Commercial University (Management Information System)
+08/2019 – 08/2020: ITPlus Institute of Information and Communication Technology (Design and Develop Professional Website)
 	
-WORK EXPERIENCE	
-
+WORK EXPERIENCE:
 From: 04/2022
-To:  Now	Company: CMC Global
+To: Now	
+Company: CMC Global
 Job Title: Software Engineer
+
 From: 04/2019
-To:  04/2022	Company: bGlobal JSC
+To: 04/2022
+Company: bGlobal JSC
 Job Title: Software Engineer
+
 From: 07/2019
-To:  04/2019	Company: Sun* Inc.
+To: 04/2019
+Company: Sun* Inc.
 Job Title: Frontend Developer
+
 From: 04/2019
-To: 07/2019	Company: VietIS JSC
+To: 07/2019
+Company: VietIS JSC
 Job Title: Internship – Frontend Developer
 	
+TECHNOLOGY AND SOFTWARE DEVELOPMENT SKILLS:
+Programing Language: JavaScript, TypeScript, Node.js, PHP
+Technology & Framework: React.js, Vue.js, Angular, Express.js, Nest.js, Laravel, MySQL, Postgress, MongoDB, Firebase
+Development Tool: VS Code, Postman, GIT, Jira, Confluence, Figma
 
-	
-TECHNOLOGY AND SOFTWARE DEVELOPMENT SKILLS	
+LANGUAGES: English (Intermediate)
 
-Level: 1-4 Aware (Basic, need to practice more); 5-7 Knowledgeable (Intermediate, can use it at work); 8-10 Proficient (Advanced, very good to use it at work)
-Competencies	Level
-Programing Language
-JavaScript, TypeScript	Proficient 9/10
-Node.js, PHP	Knowledgeable 6/10
-Technology & Framework
-React.js, Vue.js	Proficient 9/10
-Angular	Knowledgeable 6/10
-Express.js, Nest.js, Laravel	Knowledgeable 6/10
-MySQL, Postgress, MongoDB, Firebase	Knowledgeable 6/10
-Development Tool
-VS Code, Postman, GIT, Jira, Confluence, Figma	Proficient 9/10
+PROJECT LIST:
 
-
-
-LANGUAGES
-
-Language	Level	Note
-English	Intermediate	
-
-
-PROJECT LIST
-
-CIVAMS
-Project Description	This is an application combines with AI Model (Computer Vision) to supporting the building administrator, aimed at surveillance, monitoring user activities in the building, in hospital or in the car parking lot. It has some main functions as follows:
+CIVAMS:
+Project Description: This is an application combines with AI Model (Computer Vision) to supporting the building administrator, aimed at surveillance, monitoring user activities in the building, in hospital or in the car parking lot. It has some main functions as follows:
 - Authentication
 - Dashboard
 - User Management
@@ -80,45 +62,48 @@ Project Description	This is an application combines with AI Model (Computer Visi
 - User / Stranger Recognition
 - Surveillance
 - Visualize user activities in map view
-Team size	4 FE Developers & 3 BE Developers & 5 AI Engineers
-Responsibilities	- Implement main features in “Authentication”, “System Configuration” and “User / Stranger Recognition” modules.
+Team size: 4 FE Developers & 3 BE Developers & 5 AI Engineers
+Responsibilities:
+- Implement main features in “Authentication”, “System Configuration” and “User / Stranger Recognition” modules.
 - Built a service to communicate with AI Model to get the detected data and send it to client.
 - Built the FE codebase structure in micro-frontend architecture and review code for my team members.
 - Design and develop some reusable components and hooks.
 - Collaborate with development team, PM and QA to resolved issues.
-Programming Languages	TypeScript
-Tools	VSCode, Postman, Docker
-Used technologies	Framework: React.js & Nest.js
-FE Libs: Axios, GraphQL, Material UI, Styled Component, React Router DOM, React I18n, React Query, Day.js, Leaflet.js, Cropper.js, ...
-BE Libs: Prisma, Apollo GraphQL, FFMPEG, Axios, Socket.io, …
-Database: Postgress
-ETC***
-Project Description	This application is used in combination with AI Model (GenAI) to translate special languages in Southeast Asia such as: Vietnamese, Thai, Lao, Khmer, Indonesian, Malaysian.  The system can translate text and files.
+Programming Languages: TypeScript
+Tools: VSCode, Postman, Docker
+Used technologies:
+- Framework: React.js & Nest.js
+- FE Libs: Axios, GraphQL, Material UI, Styled Component, React Router DOM, React I18n, React Query, Day.js, Leaflet.js, Cropper.js, ...
+- BE Libs: Prisma, Apollo GraphQL, FFMPEG, Axios, Socket.io, …
+- Database: Postgress
+
+ETC:
+Project Description: This application is used in combination with AI Model (GenAI) to translate special languages in Southeast Asia such as: Vietnamese, Thai, Lao, Khmer, Indonesian, Malaysian.  The system can translate text and files.
 For files, the system will extract the content of the file and then translate it, trying to preserve the format of the text as much as possible.  Supported document types: TXT, DOCX, HTML, RTF, PDF.
-Team size	10 Developers
-Responsibilities	- Implement some main UI such as:
-•	Translate text
-•	Translate file
-•	User management
-•	Quotation management, ...
+Team size: 10 Developers
+Responsibilities:
+- Implement some main UI such as:
+- Translate text
+- Translate file
+- User management
+- Quotation management, ...
 - Implement some logic such as:
-•	Communicate with AI Model to translate document
-•	Handling extract file (html, docx, pdf)
-•	Send request to AI Model to translate
-•	Keep original file format after translated
+    - Communicate with AI Model to translate document
+    - Handling extract file (html, docx, pdf)
+    - Send request to AI Model to translate
+    - Keep original file format after translated
 - Design and develop some reusable components and hooks.
 - Review pull request for other team members for both FE & BE side.
 - Collaborate with development team, PM and QA to resolved issues.
-Programming Languages	TypeScript
-Tools	VSCode, Postman, MySQL Workbench, Docker
-Used technologies	Framework: Nest.js
-Libs: Prisma, Swagger, LibreOffice, MinIO, Ejs Template Engine, Axios, Socket.io, …
-Database: MySQL
-
-
+Programming Languages: TypeScript
+Tools: VSCode, Postman, MySQL Workbench, Docker
+Used technologies:
+- Framework: Nest.js
+- Libs: Prisma, Swagger, LibreOffice, MinIO, Ejs Template Engine, Axios, Socket.io, …
+- Database: MySQL
  
-CSB
-Project Description	This is an application aimed at monitoring ship activities in Vietnamese sea, supporting the management of the Vietnam Marine Police. It has some main functions as follows:
+CSB:
+Project Description: This is an application aimed at monitoring ship activities in Vietnamese sea, supporting the management of the Vietnam Marine Police. It has some main functions as follows:
 - Displays a map of Vietnam's sea areas.
 - Display ships on the map.
 - Displays the ship's location history.
@@ -127,21 +112,23 @@ Project Description	This is an application aimed at monitoring ship activities i
 - User management for the system.
 - Port management.
 - Display detailed information of ships.
-Team size	5 FE Developers & 5 BE Developers
-Responsibilities	- Implement some logic such as: display the map, display ship on the map, show ship’s location history, draw on the map, ...
+Team size: 5 FE Developers & 5 BE Developers
+Responsibilities:
+- Implement some logic such as: display the map, display ship on the map, show ship’s location history, draw on the map, ...
 - Fetch and save the ship data from API to the local database.
 - Improve the performance of the application when it has a lot of ships on the map.
 - Design and develop some reusable components and hooks.
 - Collaborate with development team, PM and QA to resolved issues.
-Programming Languages	TypeScript
-Tools	VSCode, Postman
-Used technologies	Framework: React.js & Electron.js
-Libs: Axios, Material UI, Styled Component, React Router DOM, React I18n, Redux Toolkit, Day.js, Leaflet.js, ...
-Local Database: SQLite
+Programming Languages: TypeScript
+Tools: VSCode, Postman
+Used technologies:
+- Framework: React.js & Electron.js
+- Libs: Axios, Material UI, Styled Component, React Router DOM, React I18n, Redux Toolkit, Day.js, Leaflet.js, ...
+- Local Database: SQLite
 
  
 Blayn eCommerce
-Project Description	This is an e-commerce site that sells products such as food, drinks, and accompanying accessories such as cups, bowls, tea pots, etc. for a coffee shop in the Japanese market including some main functions are as follows:
+Project Description: This is an e-commerce site that sells products such as food, drinks, and accompanying accessories such as cups, bowls, tea pots, etc. for a coffee shop in the Japanese market including some main functions are as follows:
 - Display product list.
 - Display product details.
 - Display products by category.
@@ -150,29 +137,31 @@ Project Description	This is an e-commerce site that sells products such as food,
 - Authentication.
 - Product management for administrators.
 - Display statistics, tables, charts for administrators.
-Team size	5 FE Developers, 5 BE Developers
-Responsibilities	- Built the FE project structure.
+Team size: 5 FE Developers, 5 BE Developers
+Responsibilities:
+- Built the FE project structure.
 - Implement translations for the applications.
 - Implement some main features such as:
-•	Product list
-•	Product details
-•	Categorize
-•	POS machine config
-•	Authentication
-•	Add to cart
-•	CSV, Excel import & export
+    - Product list
+    - Product details
+    - Categorize
+    - POS machine config
+    - Authentication
+    - Add to cart
+    - CSV, Excel import & export
 - Responsive for many device screen sizes.
 - Design and develop some reusable components and hooks.
 - Review pull request for other team members for FE side.
 - Collaborate with development team, PM and QA to resolved issues.
-Tools	VSCode, Postman
-Programming Language	Typescript
-Used technologies	Framework: Vuejs 3 Composition API
-Libs: Axios, TailwindCSS, Vue Router, Vue I18n, Pinia, Day.js, Slick Slider, Chart.js, Cropper.js, ...
+Tools: VSCode, Postman
+Programming Language: Typescript
+Used technologies:
+- Framework: Vuejs 3 Composition API
+- Libs: Axios, TailwindCSS, Vue Router, Vue I18n, Pinia, Day.js, Slick Slider, Chart.js, Cropper.js, ...
 
  
 Shufukita eCommerce
-Project Description	This is one site in our customer ecosystem that uses PWA technology to provide a new way to find second-hand products on an e-commerce platform with on-screen swipe and drag events. The application has several main functions such as:
+Project Description: This is one site in our customer ecosystem that uses PWA technology to provide a new way to find second-hand products on an e-commerce platform with on-screen swipe and drag events. The application has several main functions such as:
 - Authentication.
 - Post products for sale.
 - Search and filter products according to user conditions.
@@ -180,77 +169,83 @@ Project Description	This is one site in our customer ecosystem that uses PWA tec
 - Display product information.
 - Displays product list as card, can swipe up to save product, swipe right to add to cart, swipe left to skip product.
 - And many administrator features.
-Team size	3 FE Developers, 3 BE Developers
-Responsibilities	- Built the FE project structure.
+Team size: 3 FE Developers, 3 BE Developers
+Responsibilities:
+- Built the FE project structure.
 - Implement translations for the applications.
 - Implement PWA logic for the applications.
 - Implement some main feature such as:
-•	Authentication
-•	Swipe actions
-•	Product list
-•	Product details
-•	Add to card
-•	History pages
+    - Authentication
+    - Swipe actions
+    - Product list
+    - Product details
+    - Add to card
+    - History pages
 - Design and develop some reusable components and hooks.
 - Review pull request for other team members for FE side.
 - Collaborate with development team, PM and QA to resolved issues.
-Programming Language	TypeScript
-Tools	VSCode, Postman, Firebase
-Used technologies	Framework: Vuejs 2
-Libs: Axios, BootstrapVue, SCSS, Vue Router, Vue I18n, VueX, Dayjs, Chart.js, Cropper.js, Vite PWA, ...
+Programming Language: TypeScript
+Tools: VSCode, Postman, Firebase
+Used technologies:
+- Framework: Vuejs 2
+- Libs: Axios, BootstrapVue, SCSS, Vue Router, Vue I18n, VueX, Dayjs, Chart.js, Cropper.js, Vite PWA, ...
 
  
 Trios Web Admin
-Project Description	This is one of the products that manages items in the company's end-to-end encrypted messaging and information exchange ecosystem including Desktop Application, Android, iOS devices and system servers. The application has several main functions such as:
+Project Description: This is one of the products that manages items in the company's end-to-end encrypted messaging and information exchange ecosystem including Desktop Application, Android, iOS devices and system servers. The application has several main functions such as:
 - Authentication.
 - Manage physical servers.
 - Manage users on the server.
 - Manage chat group information on the server.
 - Assign user permissions on the system.
 - Monitor activity history on the system.
-Team size	2 FE Developers, 4 BE Developers
-Responsibilities	- Built the FE project structure.
+Team size: 2 FE Developers, 4 BE Developers
+Responsibilities:
+- Built the FE project structure.
 - Implement some main feature such as:
-•	Authentication
-•	OTP verification
-•	User management
-•	Server management
-•	Organization management
-•	OTT config
-•	Tracking system activity
+    - Authentication
+    - OTP verification
+    - User management
+    - Server management
+    - Organization management
+    - OTT config
+    - Tracking system activity
 - Design and develop some reusable components and hooks.
 - Review pull request for other team members for FE side.
 - Collaborate with development team, PM and QA to resolved issues.
-Programming Languages	TypeScript
-Tools	VSCode, Postman
-Used technologies	Framework: React.js
-Libs: Axios, Material UI, SCSS, React Router DOM, React I18n, React Query, Day.js, Chart.js, ...
+Programming Languages: TypeScript
+Tools: VSCode, Postman
+Used technologies:
+- Framework: React.js
+- Libs: Axios, Material UI, SCSS, React Router DOM, React I18n, React Query, Day.js, Chart.js, ...
 
  
 Trios Desktop
-Project Description	This is an application for messaging, calling, online conferencing and applying end-to-end encryption (E2E) technology inside the ecosystem of our company. It has some of main function for the chat application such as:
+Project Description: This is an application for messaging, calling, online conferencing and applying end-to-end encryption (E2E) technology inside the ecosystem of our company. It has some of main function for the chat application such as:
 - Authentication.
 - Display personal infomation.
 - Text messaging for both individual and group chat.
 - Audio call for both individual and group chat.
 - Video call for both individual and group chat.
 - Online conference.
-Team size	4 FE Developers, 4 BE Developers
-Responsibilities	- Implement some main UI such as:
-•	Text messaging screen
-•	Group chat info sidebar
-•	Audio call screen
-•	Personal information screen
+Team size: 4 FE Developers, 4 BE Developers
+Responsibilities:
+- Implement some main UI such as:
+    - Text messaging screen
+    - Group chat info sidebar
+    - Audio call screen
+    - Personal information screen
 - Implement some logic such as:
-•	Fetch the message from API to the local database
-•	Query message from local database and the to the application
-•	Filter message for search function
-•	Update Profile
+    - Fetch the message from API to the local database
+    - Query message from local database and the to the application
+    - Filter message for search function
+    - Update Profile
 - Implement translations for the applications.
 - Design and develop some reusable components and hooks.
 - Collaborate with development team, PM and QA to resolved issues.
-Programming Languages	JavaScript
-Tools	VSCode, Postman
-Used technologies	Framework: React.js & Electron.js
-Libs: Axios, Material UI, Styled Component, React Router DOM, React I18n, Redux-Toolkit, Day.js, SQLite, WebRTC, ...
+Programming Languages: JavaScript
+Tools: VSCode, Postman
+Used technologies:
+- Framework: React.js & Electron.js
+- Libs: Axios, Material UI, Styled Component, React Router DOM, React I18n, Redux-Toolkit, Day.js, SQLite, WebRTC, ...
 
